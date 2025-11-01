@@ -1,24 +1,24 @@
-/* === Base Theme Setup === */
+/* === Polished Story Presentation for GitHub Pages === */
 :root {
   --font-body: 'Lora', serif;
   --font-head: 'Playfair Display', serif;
 
-  --bg-light: #fefbf6;
-  --bg-dark: #101417;
+  --bg-light: #fdfaf5;
+  --bg-dark: #0b1114;
 
-  --text-light: #2c2c2c;
-  --text-dark: #f5f7fa;
+  --text-light: #1e2022;
+  --text-dark: #f8fafc;
 
   --accent: #f4a261;
-  --shadow: rgba(0, 0, 0, 0.08);
+  --shadow: rgba(0, 0, 0, 0.06);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-light: #101417;
-    --text-light: #f5f7fa;
-    --accent: #ffcc80;
-    --shadow: rgba(255, 255, 255, 0.04);
+    --bg-light: #0b1114;
+    --text-light: #f8fafc;
+    --accent: #ffc887;
+    --shadow: rgba(255, 255, 255, 0.03);
   }
 }
 
@@ -28,8 +28,8 @@ html, body {
   font-family: var(--font-body);
   background: var(--bg-light);
   color: var(--text-light);
-  line-height: 1.75;
-  font-size: 1.125rem;
+  line-height: 1.85;
+  font-size: 1.3rem;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -63,16 +63,26 @@ h2 {
 main {
   max-width: 840px;
   margin: 0 auto;
-  padding: 1.5rem 1.25rem 4rem;
+  padding: 2rem 1.5rem 5rem;
 }
 
 section {
-  margin: 3rem auto;
-  padding: 0 1rem;
+  margin: 3.5rem auto;
+  padding: 0 1.25rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px var(--shadow);
   opacity: 0;
   transform: translateY(30px);
   animation: fadeIn 0.8s ease forwards;
-  animation-delay: calc(var(--i, 1) * 0.2s);
+  animation-delay: calc(var(--i, 1) * 0.15s);
+  transition: background 0.4s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  section {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
 }
 
 @keyframes fadeIn {
@@ -84,8 +94,8 @@ section {
 
 section img {
   display: block;
-  margin: 0 auto 1rem;
-  width: 90vw;
+  margin: 0 auto 1.5rem;
+  width: 95%;
   max-width: 720px;
   aspect-ratio: 4 / 5;
   object-fit: contain;
@@ -104,17 +114,18 @@ section img {
 }
 
 p {
-  max-width: 95%;
-  margin: 1rem auto;
-  font-size: 1.25rem;
+  max-width: 90%;
+  margin: 1.25rem auto;
+  font-size: 1.375rem;
+  line-height: 1.9;
   padding: 0 1rem;
   text-align: justify;
-  text-wrap: pretty;
+  text-wrap: balance;
 }
 
 footer {
   text-align: center;
-  padding: 2.5rem 1.5rem;
+  padding: 3rem 1.5rem;
   font-size: 1rem;
   color: var(--text-light);
 }
@@ -131,14 +142,14 @@ footer a:hover {
 .divider {
   border: none;
   border-top: 2px dashed var(--accent);
-  width: 60%;
-  margin: 4rem auto 2rem;
+  width: 65%;
+  margin: 4.5rem auto 3rem;
 }
 
 .back-to-top {
   display: inline-block;
   margin-top: 2rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--accent);
   text-decoration: none;
   text-align: center;
@@ -150,22 +161,28 @@ footer a:hover {
 }
 
 .credits p {
-  font-size: 1.15rem;
-  margin-top: 0.75rem;
+  font-size: 1.2rem;
+  margin-top: 1rem;
 }
 
 @media screen and (max-width: 480px) {
+  section {
+    margin: 2.5rem auto;
+    padding: 1rem;
+  }
+
   section img {
     border-radius: 0.75rem;
     aspect-ratio: auto;
   }
 
   p {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
+    padding: 0 0.5rem;
   }
 
   h1 {
-    font-size: 2.1rem;
+    font-size: 2.25rem;
   }
 
   .small-photo {
