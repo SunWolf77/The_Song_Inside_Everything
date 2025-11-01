@@ -1,4 +1,4 @@
-/* === Polished Story Presentation for GitHub Pages === */
+/* === Polished and Refined for Story Presentation === */
 :root {
   --font-body: 'Lora', serif;
   --font-head: 'Playfair Display', serif;
@@ -28,8 +28,8 @@ html, body {
   font-family: var(--font-body);
   background: var(--bg-light);
   color: var(--text-light);
-  line-height: 1.85;
-  font-size: 1.3rem;
+  line-height: 1.7;
+  font-size: 1.125rem;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -63,26 +63,16 @@ h2 {
 main {
   max-width: 840px;
   margin: 0 auto;
-  padding: 2rem 1.5rem 5rem;
+  padding: 2rem 1.25rem 4rem;
 }
 
 section {
-  margin: 3.5rem auto;
-  padding: 0 1.25rem;
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 1rem;
-  box-shadow: 0 2px 6px var(--shadow);
+  margin: 3rem auto;
+  padding: 0 1rem;
   opacity: 0;
   transform: translateY(30px);
   animation: fadeIn 0.8s ease forwards;
-  animation-delay: calc(var(--i, 1) * 0.15s);
-  transition: background 0.4s ease;
-}
-
-@media (prefers-color-scheme: dark) {
-  section {
-    background-color: rgba(255, 255, 255, 0.05);
-  }
+  animation-delay: calc(var(--i, 1) * 0.2s);
 }
 
 @keyframes fadeIn {
@@ -115,17 +105,17 @@ section img {
 
 p {
   max-width: 90%;
-  margin: 1.25rem auto;
-  font-size: 1.375rem;
-  line-height: 1.9;
+  margin: 1.1rem auto;
+  font-size: 1.2rem;
+  line-height: 1.75;
   padding: 0 1rem;
-  text-align: justify;
-  text-wrap: balance;
+  text-align: left;
+  text-wrap: pretty;
 }
 
 footer {
   text-align: center;
-  padding: 3rem 1.5rem;
+  padding: 2.5rem 1.5rem;
   font-size: 1rem;
   color: var(--text-light);
 }
@@ -149,7 +139,7 @@ footer a:hover {
 .back-to-top {
   display: inline-block;
   margin-top: 2rem;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: var(--accent);
   text-decoration: none;
   text-align: center;
@@ -161,28 +151,23 @@ footer a:hover {
 }
 
 .credits p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-top: 1rem;
 }
 
 @media screen and (max-width: 480px) {
   section {
-    margin: 2.5rem auto;
-    padding: 1rem;
-  }
-
-  section img {
-    border-radius: 0.75rem;
-    aspect-ratio: auto;
+    margin: 2rem auto;
+    padding: 1rem 0.5rem;
   }
 
   p {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     padding: 0 0.5rem;
   }
 
   h1 {
-    font-size: 2.25rem;
+    font-size: 2.2rem;
   }
 
   .small-photo {
