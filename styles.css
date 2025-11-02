@@ -175,3 +175,18 @@ footer a:hover {
     height: auto;
   }
 }
+.dedication {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2rem;
+  margin: 1rem auto 0.5rem;
+  max-width: 80%;
+  opacity: 0.9;
+}
+
+.dedication-divider {
+  border: none;
+  border-top: 1px solid var(--accent);
+  width: 50%;
+  margin: 1.5rem auto 2rem;
+}
